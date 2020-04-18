@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/thiruvalluvar2"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/title"
+        android:layout_width="442dp"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarSize="5dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+</LinearLayout>

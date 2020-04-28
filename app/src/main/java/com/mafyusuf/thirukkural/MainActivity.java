@@ -1842,4 +1842,15 @@ public class MainActivity extends AppCompatActivity {
         //Thank you , please reconsider this,and give me a opportunity in Zoho
         //am waiting for positve announcement
     }
+    
+ public void onBackPressed() {
+        new AlertDialog.Builder(MainActivity.this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")
+                .setMessage("Are you sure you want to exit?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                }).setNegativeButton("No", null).show();
+    };
 }
